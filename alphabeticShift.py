@@ -1,4 +1,6 @@
 """
+For inputString = "crazy", the output should be
+alphabeticShift(inputString) = "dsbaz".
 """
 
 def alphabeticShift(inputString):
