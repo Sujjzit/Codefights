@@ -1,0 +1,16 @@
+"""
+For text = "Ready, steady, go!", the output should be
+longestWord(text) = "steady".
+"""
+
+def longestWord(text):
+    a=''
+    r=[]
+    for i in range(len(text)):
+        if ('a'<=text[i] and text[i]<='z') or ('A'<=text[i] and text[i]<='Z'):
+            r.append(text[i]) 
+            if len(r)>len(a):
+                a=''.join(r)
+        else:
+            r=[]
+    return a
